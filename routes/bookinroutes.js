@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 const stripe = require('stripe')('sk_test_51PDekiSGfzm40G055NL7Jb84b6YnfiYhI1OOFXGHOERX7lEkgEprTzxX4OW4J9D7fkN0RNykkucCYoeE4PIMMnkw00kBDaN4qB');
 const Booking = require('../models/booking');
 const CleaningService = require('../models/cleaningservicelist');
-const verifyToken = require('../middleware/main');
+const verifyToken = require('../middleware/index');
 router.post('/bookings', verifyToken, async (req, res) => {
     try {
         const {
