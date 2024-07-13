@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const QuoteRequest = require('../models/quote');
-const verifyToken = require('../middleware/main');
+const verifyToken = require('../middleware/index');
 
 // Route to create a new quote request
 router.post('/quote',verifyToken, async (req, res) => {
