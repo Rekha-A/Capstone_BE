@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const verifyToken = require('../middleware/index');
+const verifyToken = require('../middleware/main');
 
 // Protected route
 router.get('/protected', verifyToken, (req, res) => {
