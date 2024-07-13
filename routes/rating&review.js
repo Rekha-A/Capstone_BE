@@ -3,7 +3,7 @@
 const express = require ('express');
 const router = express.Router();
 const RatingReview = require('../models/rating&review');
-const verifyToken = require('../middleware/main');
+const verifyToken = require('../middleware/index');
 // Route to submit a new rating and review
 router.post('/rating',verifyToken, async (req, res) => {
   try {
