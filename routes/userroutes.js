@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken'); // Import JWT
 const router = express.Router();
 
-const verifyToken = require('../middleware/main');
+const verifyToken = require('../middleware/index');
 
 // Import User model
 const User = require('../models/user');
