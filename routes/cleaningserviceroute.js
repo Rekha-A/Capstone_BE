@@ -4,7 +4,7 @@ const multer = require('multer');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const cleaningservices = require('../models/cleaningservicelist');
-const verifyToken = require('../middleware/main');
+const verifyToken = require('../middleware/index');
 const fs = require('fs');
 
 
